@@ -101,7 +101,7 @@ const BenefitsSection = () => {
                 <div className="relative w-full h-full max-w-md mx-auto">
                   <div className="absolute inset-0 bg-gradient-to-br from-woof-purple/20 to-woof-blue/20 rounded-2xl transform rotate-3"></div>
                   <img 
-                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    src="/images/indian-family.jpg" 
                     alt="Family using Woof app together" 
                     className="rounded-2xl shadow-lg relative z-10 object-cover w-full h-full"
                   />
