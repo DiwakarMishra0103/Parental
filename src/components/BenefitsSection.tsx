@@ -16,13 +16,13 @@ const benefits = [
   },
   {
     icon: <MapPin className="h-12 w-12 text-woof-orange" />,
-    title: "Location Safety",
-    description: "Track your child's location in busy Indian cities with accurate notifications when they reach school or tuitions."
+    title: "Location Tracking",
+    description: "Track your child's location with accurate notifications when they reach school."
   },
   {
     icon: <Eye className="h-12 w-12 text-woof-green" />,
     title: "Content Filtering",
-    description: "Block inappropriate content based on Indian cultural values and your family's personal preferences."
+    description: "Block inappropriate content based on your family's personal preferences."
   }
 ];
 
@@ -98,7 +98,7 @@ const BenefitsSection = () => {
               </div>
               
               <div className="relative flex items-center justify-center p-8 lg:p-0">
-                <div className="relative w-full h-full max-w-md mx-auto">
+                <div className="relative w-full h-full lg:max-h-[75vh] max-w-md mx-auto">
                   <div className="absolute inset-0 bg-gradient-to-br from-woof-purple/20 to-woof-blue/20 rounded-2xl transform rotate-3"></div>
                   <img 
                     src="/images/indian-family.jpg" 
