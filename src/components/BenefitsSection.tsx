@@ -7,7 +7,7 @@ const benefits = [
   {
     icon: <Shield className="h-12 w-12 text-woof-purple" />,
     title: "Peace of Mind",
-    description: "Rest easy knowing your child is protected from online dangers with real-time alerts in Hindi and English."
+    description: "Rest assured knowing your child is protected from online dangers with real-time alerts school and tuition."
   },
   {
     icon: <Clock className="h-12 w-12 text-woof-blue" />,
@@ -17,18 +17,18 @@ const benefits = [
   {
     icon: <MapPin className="h-12 w-12 text-woof-orange" />,
     title: "Location Tracking",
-    description: "Track your child's location with accurate notifications when they reach school."
+    description: "Track your child's location with accurate notifications."
   },
   {
     icon: <Eye className="h-12 w-12 text-woof-green" />,
     title: "Content Filtering",
-    description: "Block inappropriate content based on your family's personal preferences."
+    description: "Block inappropriate content based on your family's preferences."
   }
 ];
 
 const features = [
   "Monitors popular Indian apps and social media platforms",
-  "Multi-language interface including Hindi, English, and more",
+  "Multi-language interface",
   "24/7 support team based in India"
 ];
 

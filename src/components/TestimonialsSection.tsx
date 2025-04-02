@@ -11,29 +11,29 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    text: "As a working mother in Mumbai, Woof gives me peace of mind knowing my children are safe online while I'm at the office.",
+    text: "Woof makes me feel secure knowing my children are safe online while I'm at the office.",
     author: "Priya S.",
-    role: "Working parent, Mumbai"
+    role: "Mumbai"
   },
   {
     text: "My son was spending too much time gaming. With Woof, I can now ensure he completes his studies before screen time.",
     author: "Rajesh K.",
-    role: "Father of two, Bangalore"
+    role: "Bangalore"
   },
   {
     text: "The location tracking feature lets me know when my daughter reaches her tuition classes safely. Invaluable in Delhi traffic!",
     author: "Anjali M.",
-    role: "Mother of a teenager, Delhi"
+    role: "Delhi"
   },
   {
     text: "With so much inappropriate content online, Woof's content filtering gives us control over what our children can access.",
     author: "Vikram P.",
-    role: "IT professional, Pune"
+    role: "Pune"
   },
   {
     text: "Setting up Woof was surprisingly easy. The Hindi language option made it simple for my wife who prefers Hindi over English.",
     author: "Sanjay G.",
-    role: "Father of twins, Chennai"
+    role: "Chennai"
   }
 ];
 
@@ -45,9 +45,9 @@ const TestimonialsSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Trusted by Indian Families
           </h2>
-          <p className="text-xl text-muted-foreground">
+          {/* <p className="text-xl text-muted-foreground">
             Hear from parents across India who've found peace of mind with Woof
-          </p>
+          </p> */}
         </div>
 
         <Carousel

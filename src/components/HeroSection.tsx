@@ -18,7 +18,7 @@ const HeroSection = () => {
               Digital safety for your children in today's India
             </h1>
             <p className="text-xl text-muted-foreground md:text-2xl max-w-[600px]">
-              Peace of mind for modern Indian parents, healthy boundaries for children. Digital parenting made simple.
+            keep your child safe by blocking harmful content, tracking location and setting time limits on apps. Digital parenting made simple.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 pt-4">
               <a href="#CTA" className="text-gray-600 hover:text-woof-purple transition-colors">
@@ -70,7 +70,7 @@ const HeroSection = () => {
                   <div className="flex items-center justify-between mb-3">
                     <div className="flex items-center">
                       <Smartphone className="h-4 w-4 text-woof-blue mr-2" />
-                      <span className="text-sm font-medium">Child's Device</span>
+                      <span className="text-sm font-medium">Rohit's Device</span>
                     </div>
                     <Clock className="h-4 w-4 text-woof-blue" />
                   </div>

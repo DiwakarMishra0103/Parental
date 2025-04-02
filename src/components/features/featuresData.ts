@@ -26,10 +26,10 @@ export const featuresData: Feature[] = [
     visualComponent: ScreenTimeVisualization,
     contentTitle: "Healthy Digital Boundaries",
     items: [
-      "Set daily screen time limits to encourage balanced activities",
+      "Set daily screen time limits to encourage healthy digital habits",
       "Schedule device-free times for meals, homework, and bedtime",
-      "Create custom schedules for school days vs. weekends",
-      "Remotely pause device access for immediate family time"
+      "Create custom schedules for weekdays vs. weekends",
+      "Remotely pause device access"
     ]
   },
   {
@@ -41,10 +41,10 @@ export const featuresData: Feature[] = [
     visualComponent: ContentFilteringVisualization,
     contentTitle: "Protection from Harmful Content",
     items: [
-      "Block inappropriate websites and content automatically",
+      "Block inappropriate websites and content ",
       "Filter content by age-appropriate categories",
       "Get alerts when harmful content is detected",
-      "Safe search enforcement across browsers and apps"
+      "Enable safe search enforcement across browsers and apps"
     ]
   },
   {
@@ -57,8 +57,8 @@ export const featuresData: Feature[] = [
     contentTitle: "App Usage Insights",
     items: [
       "See which apps your child uses and for how long",
-      "Block inappropriate apps or set time limits per app",
-      "Monitor messaging apps for concerning behavior",
+      "Block inappropriate apps and set time limits ",
+      "Monitor messaging apps for suspicious behavior",
       "Get weekly reports on digital habits and trends"
     ]
   },
