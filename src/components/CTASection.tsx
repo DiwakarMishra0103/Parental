@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, CheckCircleIcon } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
@@ -15,10 +15,15 @@ const CTASection = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+
+    // Generate the current timestamp without storing it in UI state
+    const currentTimestamp = new Date().toLocaleString();
+
     const formData = new FormData();
     formData.append("Name", name);
     formData.append("Email", email);
     formData.append("Phone", phone);
+    formData.append("Timestamp", currentTimestamp); // Append timestamp to the form data
 
     try {
       await fetch(
@@ -33,6 +38,7 @@ const CTASection = () => {
         description: "Your form has been submitted successfully.",
         variant: "default",
       });
+      // Reset form fields
       setName("");
       setEmail("");
       setPhone("");
@@ -54,9 +60,6 @@ const CTASection = () => {
         <div className="max-w-6xl mx-auto bg-gradient-to-br from-woof-blue to-woof-purple rounded-3xl shadow-xl overflow-hidden">
           <div className="grid md:grid-cols-2">
             <div className="p-8 md:p-12 flex flex-col justify-center">
-              {/* <div className="inline-flex items-center rounded-full px-4 py-1 text-sm mb-6 bg-white/20 text-white">
-                <span>14-day free trial</span>
-              </div> */}
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                 Protect your child's digital journey today
               </h2>
@@ -71,13 +74,6 @@ const CTASection = () => {
                 >
                   Start Your Free Trial
                 </Button>
-                {/* <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-white bg-transparent text-white hover:bg-white/20"
-                >
-                  Plans Starting at ₹199/month
-                </Button> */}
               </div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-8 md:p-12">
