@@ -1,16 +1,18 @@
 
 import { Facebook, Twitter, Instagram, Mail } from "lucide-react";
 
-const Footer = () => {
+const Footer = ({toggleTerms}) => {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container px-4 md:px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
+            <a href="/" >
             <h3 className="text-2xl font-bold mb-4">
               <span className="text-woof-blue">W</span>
               <span className="text-woof-purple">oof</span>
             </h3>
+            </a>
             <p className="text-gray-400 mb-4">
               Keeping children safe in the digital world through innovative parental controls.
             </p>
@@ -44,7 +46,7 @@ const Footer = () => {
             <h4 className="font-bold text-lg mb-4">Support</h4>
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
+              <li><a href="#terms"  onClick={toggleTerms} className="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
             </ul>
           </div>
         </div>

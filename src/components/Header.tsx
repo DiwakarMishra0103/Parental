@@ -10,10 +10,11 @@ const Header = () => {
     <header className="fixed w-full bg-white/80 backdrop-blur-md z-50 py-4 shadow-sm">
       <div className="container flex items-center justify-between">
         <div className="flex items-center">
-          <a href="#hero" className="text-gray-600 hover:text-woof-purple transition-colors">
+          <a href="/" className="text-gray-600 hover:text-woof-purple transition-colors">
             <h1 className="text-2xl font-bold text-woof-purple">
               <span className="text-woof-blue">W</span>oof
-            </h1></a>
+            </h1>
+          </a>
         </div>
 
         {/* Desktop Navigation */}
