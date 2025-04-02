@@ -44,7 +44,7 @@ export const featuresData: Feature[] = [
       "Block inappropriate websites and content ",
       "Filter content by age-appropriate categories",
       "Get alerts when harmful content is detected",
-      "Enable safe search enforcement across browsers and apps"
+      "Enable safe search across browsers and apps"
     ]
   },
   {
