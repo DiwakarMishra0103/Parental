@@ -45,7 +45,7 @@ const Footer = ({toggleTerms}) => {
           <div>
             <h4 className="font-bold text-lg mb-4">Support</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+              <li><a href="#terms" onClick={toggleTerms} className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
               <li><a href="#terms"  onClick={toggleTerms} className="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
             </ul>
           </div>
