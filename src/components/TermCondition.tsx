@@ -85,7 +85,7 @@ const TermCondition = () => {
                         <h2 className="text-2xl font-semibold mb-2">Contact Us</h2>
                         <p>
                             For questions regarding these Terms and Conditions, please contact us at
-                            <a href="mailto:ayush@byldd.com" className="text-blue-500 hover:underline">ayush@byldd.com</a>.
+                            <a href="mailto:ayush@byldd.com" className="text-blue-500 hover:underline ml-2">ayush@byldd.com</a>.
                         </p>
                     </section>
                 </div>
