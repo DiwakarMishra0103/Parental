@@ -11,7 +11,7 @@ const CTASection = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [concern, setConcern] = useState(""); 
+  const [concern, setConcern] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -137,13 +137,13 @@ const CTASection = () => {
                     <Label htmlFor="concern" className="text-white">
                       What is your primary concern for your child's digital safety? (optional)
                     </Label>
-                    <Input
+                    <textarea
                       id="concern"
                       placeholder="Enter your concern"
                       name="Concern"
                       value={concern}
                       onChange={(e) => setConcern(e.target.value)}
-                      className="border-white/30 bg-white/10 text-white placeholder:text-white/50"
+                      className="w-full h-24 border-white/30 bg-white/10 text-white placeholder:text-white/50 rounded-md p-3"
                     />
                   </div>
                   <Button
