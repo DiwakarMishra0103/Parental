@@ -7,7 +7,7 @@ const benefits = [
   {
     icon: <Shield className="h-12 w-12 text-woof-purple" />,
     title: "Peace of Mind",
-    description: "Rest assured knowing your child is protected from online dangers with real-time alerts school and tuition."
+    description: "Rest assured knowing your child is protected from online dangers with real-time alerts."
   },
   {
     icon: <Clock className="h-12 w-12 text-woof-blue" />,

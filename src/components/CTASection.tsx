@@ -11,6 +11,7 @@ const CTASection = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const [concern, setConcern] = useState(""); 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -23,6 +24,7 @@ const CTASection = () => {
     formData.append("Name", name);
     formData.append("Email", email);
     formData.append("Phone", phone);
+    formData.append("Concern", concern);
     formData.append("Timestamp", currentTimestamp); // Append timestamp to the form data
 
     try {
@@ -42,6 +44,7 @@ const CTASection = () => {
       setName("");
       setEmail("");
       setPhone("");
+      setConcern("");
     } catch (error) {
       console.error("Error submitting form", error);
       toast({
@@ -129,6 +132,19 @@ const CTASection = () => {
                         className="pl-10 border-white/30 bg-white/10 text-white placeholder:text-white/50"
                       />
                     </div>
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="concern" className="text-white">
+                      What is your primary concern for your child's digital safety? (optional)
+                    </Label>
+                    <Input
+                      id="concern"
+                      placeholder="Enter your concern"
+                      name="Concern"
+                      value={concern}
+                      onChange={(e) => setConcern(e.target.value)}
+                      className="border-white/30 bg-white/10 text-white placeholder:text-white/50"
+                    />
                   </div>
                   <Button
                     type="submit"

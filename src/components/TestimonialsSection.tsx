@@ -30,11 +30,7 @@ const testimonials = [
     author: "Vikram P.",
     role: "Pune"
   },
-  {
-    text: "Setting up Woof was surprisingly easy. The Hindi language option made it simple for my wife who prefers Hindi over English.",
-    author: "Sanjay G.",
-    role: "Chennai"
-  }
+
 ];
 
 const TestimonialsSection = () => {
