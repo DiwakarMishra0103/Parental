@@ -18,7 +18,7 @@ const FeaturesSection = () => {
       </div>
 
       {featuresData.map((feature, index) => (
-        <FeatureCard key={feature.id} feature={feature} index={index} />
+        <FeatureCard key={feature.id} feature={feature} index={index} id={feature.id}/>
       ))}
     </section>
   );

@@ -6,13 +6,14 @@ import { Feature } from "./featuresData";
 interface FeatureCardProps {
   feature: Feature;
   index: number;
+  id: string;
 }
 
-export const FeatureCard: React.FC<FeatureCardProps> = ({ feature, index }) => {
+export const FeatureCard: React.FC<FeatureCardProps> = ({ feature, index, id }) => {
   const { iconComponent: IconComponent, title, colorClass, contentTitle, items } = feature;
   
   return (
-    <div className={`py-16 ${index % 2 === 0 ? "bg-gray-50" : "bg-white"}`}>
+    <div id={id} className={`py-16 ${index % 2 === 0 ? "bg-gray-50" : "bg-white"}`}>
       <div className="container px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           {index % 2 === 0 ? (

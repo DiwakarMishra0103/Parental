@@ -4,6 +4,7 @@ import { Mail, Phone } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
+import { Textarea } from "./ui/textarea";
 
 const CTASection = () => {
   const { toast } = useToast();
@@ -146,13 +147,13 @@ const CTASection = () => {
                     <Label htmlFor="concern" className="text-white">
                       What is your primary concern for your child's digital safety? (optional)
                     </Label>
-                    <textarea
+                    <Textarea
                       id="concern"
                       placeholder="Enter your concern"
                       name="Concern"
                       value={concern}
                       onChange={(e) => setConcern(e.target.value)}
-                      className="w-full h-24 border-white/30 bg-white/10 text-white placeholder:text-white/50 rounded-md p-3"
+                      className="w-full  border-white/30 bg-white/10 text-white placeholder:text-white/50 rounded-md p-3"
                     />
                   </div>
                   <Button

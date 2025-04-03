@@ -35,10 +35,10 @@ const Footer = ({toggleTerms}) => {
           <div>
             <h4 className="font-bold text-lg mb-4">Features</h4>
             <ul className="space-y-2">
-              <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">Screen Time Management</a></li>
-              <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">Content Filtering</a></li>
-              <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">App Monitoring</a></li>
-              <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">Location Tracking</a></li>
+              <li><a href="#screen-time" className="text-gray-400 hover:text-white transition-colors">Screen Time Management</a></li>
+              <li><a href="#content-filtering" className="text-gray-400 hover:text-white transition-colors">Content Filtering</a></li>
+              <li><a href="#app-monitoring" className="text-gray-400 hover:text-white transition-colors">App Monitoring</a></li>
+              <li><a href="#location-tracking" className="text-gray-400 hover:text-white transition-colors">Location Tracking</a></li>
             </ul>
           </div>
           
