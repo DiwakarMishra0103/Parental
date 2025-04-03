@@ -15,6 +15,15 @@ const CTASection = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+      // Validate phone number length
+      if (phone.length !== 10 || isNaN(Number(phone))) {
+        toast({
+          title: "Invalid Number",
+          description: "Please enter a valid 10-digit phone number.",
+          variant: "destructive",
+        });
+        return; // Stop form submission if validation fails
+      }
     setIsSubmitting(true);
 
     // Generate the current timestamp without storing it in UI state
