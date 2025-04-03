@@ -23,7 +23,7 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-3 pt-4">
               <a href="#CTA" className="text-gray-600 hover:text-woof-purple transition-colors">
                 <Button size="lg" className="bg-woof-blue hover:bg-woof-purple text-white transition-colors">
-                  Start Your Free Trial
+                  Get Started
                 </Button>
               </a>
               {/* <Button size="lg" variant="outline" className="border-woof-blue text-woof-blue hover:bg-woof-blue hover:text-white transition-colors">

@@ -80,14 +80,12 @@ const CTASection = () => {
                 Join thousands of Indian families who trust Woof to keep their
                 children safe online. No credit card required.
               </p>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <Button
-                  size="lg"
-                  className="bg-white text-woof-purple hover:bg-gray-100"
-                >
-                  Start Your Free Trial
+             
+              <a href="#CTA" className="text-gray-600 hover:text-woof-purple transition-colors">
+                <Button size="lg" className="bg-white text-woof-purple hover:bg-gray-100">
+                  Get Started
                 </Button>
-              </div>
+              </a>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-8 md:p-12">
               <div className="max-w-md mx-auto">
